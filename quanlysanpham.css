@@ -48,9 +48,11 @@ td:nth-child(6), th:nth-child(6) {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10px;
+    gap: 20px;
 }
 
-.btn-add {
+.btn {
+    padding:  10px 20px;
     background-color: #f66a53;
     color: white;
     padding: 10px 20px;
@@ -59,7 +61,7 @@ td:nth-child(6), th:nth-child(6) {
     border-radius: 5px;
 }
 
-.btn-add:hover {
+.btn-category:hover {
     background-color: #e55644;
 }
 
