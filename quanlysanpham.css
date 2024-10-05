@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f66a53;
+    color: white;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 100px;
+}
+
+td img {
+    width: 170px;
+    height: auto;
+}
+
+td textarea {
+    resize: none;
+    width: 90%;
+    height: 50px;
+}
+
+td:nth-child(6), th:nth-child(6) {
+    width: 120px; 
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    background-color: #f66a53;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add:hover {
+    background-color: #e55644;
+}
+
+.btn-action {
+    background-color: #f66a53;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.btn-action.delete {
+    background-color: #f66a53;
+}
+
+.btn-action:hover {
+    opacity: 0.8;
+}
