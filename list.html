@@ -1,0 +1,603 @@
+<html>
+
+<head>
+    <title>
+        DaNaFood
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        .wrap {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav a:last-child {
+            color: #ff6600;
+        }
+
+        .main-banner {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+        }
+
+        .main-banner img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        .main-banner h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .main-banner h1 span {
+            color: #ff6600;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-left: 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .categories {
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            width: 1400px;
+        }
+
+        .category {
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .category img {
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .category p {
+            margin: 10px 0 0;
+        }
+
+        .new-items {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .new-items h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            width: 200px;
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .item p {
+            margin: 5px 0;
+        }
+
+        .item button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .view-all {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .view-all a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .bg-banner{
+            background: url('img/banner.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="nav">
+            <a href="#">
+                <img src="img/logo.jpg" alt="" width="117" height="67">
+            </a>
+            <a href="#">
+                Thử Quán Mới
+            </a>
+            <a href="#">
+                Đang Khuyến Mãi
+            </a>
+            <a href="#">
+                Thương Hiệu Quen Thuộc
+            </a>
+            <a href="#">
+                Cửa Hàng Gần Bạn
+            </a>
+            <a href="#">
+                Vừa Đặt Gần Đây
+            </a>
+            <a href="#">
+                Cửa Hàng Chờ Đồ
+            </a>
+            <a href="#">
+                Đăng nhập
+            </a>
+        </div>
+        <div class="main-banner">
+            <div class="bg-banner">
+
+            </div>
+            <h1>
+                ĐẶT MÓN NÀO
+                <span>
+                    CŨNG FREESHIP
+                </span>
+            </h1>
+            <div class="search-bar">
+                <input placeholder="Tìm quán ăn, trà sữa yêu thích để đặt DaNaFood giao ngay" type="text" />
+                <select>
+                    <option>
+                        Trường đại học Duy Tân
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="category">
+                <img alt="Ăn Vặt" height="100"
+                    src="https://cdn-kvweb.kiotviet.vn/kiotviet-website/wp-content/uploads/2019/10/kinh-doanh-đồ-ăn-vặt-mùa-đông.jpg"
+                    width="100" />
+                <p>
+                    Ăn Vặt
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Càfé" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/X7DCfPqU0NyUCSpV0mvcFdfe9i8sMHP5sUX8gE3ahjw4eRdOB.jpg"
+                    width="100" />
+                <p>
+                    Càfé
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Trà Sữa" height="100"
+                    src="https://www.nguyenlieutrasua.com/cdn/shop/articles/tra-sua-1_1024x1024.jpg?v=1699365446"
+                    width="100" />
+                <p>
+                    Trà Sữa
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Ăn Trưa" height="100"
+                    src="https://houserentaldanang.com/wp-content/uploads/2023/10/Da-Nang-trua-an-gi-1-1.jpg"
+                    width="100" />
+                <p>
+                    Ăn Trưa
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Ăn Sáng" height="100"
+                    src="https://statics.vincom.com.vn/xu-huong/mon-an-sang-pho-bien-cua-nguoi-viet-nam17.jpg"
+                    width="100" />
+                <p>
+                    Ăn Sáng
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Ăn Tối" height="100"
+                    src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/huyendt/thucdonbuatoi7ngay/thuc-don-bua-toi-7-ngay-(1).png"
+                    width="100" />
+                <p>
+                    Ăn Tối
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Trái Trái Cây" height="100"
+                    src="https://xingfuvietnam.vn/wp-content/uploads/2023/02/tra-cam-nha-dam-FILEminimizer.jpg"
+                    width="100" />
+                <p>
+                    Trà Trái Cây
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Sinh Tố/Nước Ép" height="100"
+                    src="https://kangaroovietnam.vn/Uploads/sinh-to-bo.jpg"
+                    width="100" />
+                <p>
+                    Sinh Tố/Nước Ép
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Ăn Vội Nhóm" height="100"
+                    src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/vuvu/kham-pha/nhahangphuhopvoinhom/hcm/20-nha-hang-phu-hop-voi-nhom-ban-be-dong-nghiep-o-sai-gon-19.jpg"
+                    width="100" />
+                <p>
+                    Ăn Với Nhóm
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Bánh Mì Việt" height="100"
+                    src="https://daotaobeptruong.vn/wp-content/uploads/2021/01/gioi-thieu-ve-banh-mi-viet-nam.jpg"
+                    width="100" />
+                <p>
+                    Bánh Mì Việt
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Cơm Văn Phòng" height="100"
+                    src="https://inhat.vn/wp-content/uploads/2021/09/com-van-phong-da-nang-6-min.jpg"
+                    width="100" />
+                <p>
+                    Cơm Văn Phòng
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Lẩu" height="100"
+                    src="https://image.tienphong.vn/w890/Uploaded/2024/rkznae/2020_08_03/an_lau_dung_cach_15758628233581103875147_crop_1575862832311103042156_GQEA.jpg"
+                    width="100" />
+                <p>
+                    Lẩu
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Cơm Tấm Cơm Sườn" height="100"
+                    src="https://static.vinwonders.com/production/com-tam-phu-quoc-banner.jpeg"
+                    width="100" />
+                <p>
+                    Cơm Tấm Cơm Sườn
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Bún Bò" height="100"
+                    src="https://dienmaynewsun.com/wp-content/uploads/2021/03/bun-bo-hue.jpg"
+                    width="100" />
+                <p>
+                    Bún Bò
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Hủ Tiếu" height="100"
+                    src="https://i.ytimg.com/vi/fOZXbbY9rfg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAjt3Aah_lX3rht9r5ye-4IseKY1w"
+                    width="100" />
+                <p>
+                    Hủ Tiếu
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Cơm Gà" height="100"
+                    src="https://i.ytimg.com/vi/8SmhJ_1z7GU/maxresdefault.jpg"
+                    width="100" />
+                <p>
+                    Cơm Gà
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Phở Bò" height="100"
+                    src="https://bepinoxvietnam.vn/wp-content/uploads/2020/01/pho-bap-bo-mang-dam-huong-vi-dac-biet.jpg"
+                    width="100" />
+                <p>
+                    Phở Bò
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Cháo" height="100"
+                    src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/9/21/955988/Meo-Nau-Chao-Nhanh-N.jpeg"
+                    width="100" />
+                <p>
+                    Cháo
+                </p>
+            </div>
+            <div class="category">
+                <img alt="Xem tất cả" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/wI9vEfz8EF2nBiZAUgGdyWrfApK0dwYBCfp32eMLJmEh9RdOB.jpg"
+                    width="100" />
+                <p>
+                    Xem tất cả
+                </p>
+            </div>
+        </div>
+        <div class="new-items">
+            <h2>
+                KHÁM PHÁ MÓN MỚI
+            </h2>
+            <div class="items">
+                <div class="item">
+                    <img alt="Bún Gạo Gà Ta" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/oLiZEGo8S6rgEJ8vY4P1T0FTAxMEVq6JaW7AAUfflo3WfoOnA.jpg"
+                        width="200" />
+                    <h3>
+                        Bún Gạo Gà Ta
+                    </h3>
+                    <p>
+                        40.000 đ
+                    </p>
+                    <p>
+                        12.8km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Ô Long Sữa" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/MSV2uZHsZLJ2Jdg2lvOaWasyRRNnoUVewoffPkY8N5P9eRdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Ô Long Sữa
+                    </h3>
+                    <p>
+                        50.000 đ
+                    </p>
+                    <p>
+                        4km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Lucky" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/tHin4f6siUVwGSJ2oiNpM1Mfvp1oQfomrg44h2byseBa8RdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Lucky
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        5.7km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Hồng Trà Sữa" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/GbqO0GtpoD72KBKgXTrdO75uIoSOe2Nsr8sNZOnN6V6yPqzJA.jpg"
+                        width="200" />
+                    <h3>
+                        Hồng Trà Sữa
+                    </h3>
+                    <p>
+                        50.000 đ
+                    </p>
+                    <p>
+                        9.2km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Hồng Trà Đào Sữa" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/Wv79REbRLtKtCNpgzO0Lm4AKUOccUzgNmZr0Df8CP1KkPqzJA.jpg"
+                        width="200" />
+                    <h3>
+                        Hồng Trà Đào Sữa
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        6.3km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Sữa Chua Xoài Đắc Thơm" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/HqRCptmSBrJdCZWTQJ6HXyOoVGd8lBP4Cv6BfteGLhZLfoOnA.jpg"
+                        width="200" />
+                    <h3>
+                        Sữa Chua Xoài Thơm
+                    </h3>
+                    <p>
+                        77.000 đ
+                    </p>
+                    <p>
+                        9.2km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Vải Lài" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/DDBbk2UipBLRGVTAe4rUrse0tiRY3g0fr31W7LEfFWvk9RdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Vải Lài
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        2.1km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Vải Lài" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/DDBbk2UipBLRGVTAe4rUrse0tiRY3g0fr31W7LEfFWvk9RdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Vải Lài
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        9.2km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Nhãn Lài" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/TI4I8eAmI80hDCw5toIHZurZ2Fhheqf57qDNMgihFWhieRdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Nhãn Lài
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        4km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Ô Long Sữa" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/MSV2uZHsZLJ2Jdg2lvOaWasyRRNnoUVewoffPkY8N5P9eRdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Ô Long Sữa
+                    </h3>
+                    <p>
+                        50.000 đ
+                    </p>
+                    <p>
+                        4km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Trà Lucky" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/tHin4f6siUVwGSJ2oiNpM1Mfvp1oQfomrg44h2byseBa8RdOB.jpg"
+                        width="200" />
+                    <h3>
+                        Trà Lucky
+                    </h3>
+                    <p>
+                        55.000 đ
+                    </p>
+                    <p>
+                        5.7km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+                <div class="item">
+                    <img alt="Hồng Trà Sữa" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/GbqO0GtpoD72KBKgXTrdO75uIoSOe2Nsr8sNZOnN6V6yPqzJA.jpg"
+                        width="200" />
+                    <h3>
+                        Hồng Trà Sữa
+                    </h3>
+                    <p>
+                        50.000 đ
+                    </p>
+                    <p>
+                        9.2km
+                    </p>
+                    <button>
+                        Chọn mua
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#">
+                XEM TẤT CẢ
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
